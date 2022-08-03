@@ -16,8 +16,8 @@ Features:
 This is the project:
 
 import random
-
 # Global List Declaration
+
 name = []
 phno = []
 add = []
@@ -83,6 +83,7 @@ def Booking():
 
         # checks if any field is not empty
         if n != "" and p1 != "" and a != "":
+        
             name.append(n)
             add.append(a)
             break
@@ -146,10 +147,15 @@ def Booking():
     p.append(0)
 
     print("")
+   
     print("\t\t\t***ROOM BOOKED SUCCESSFULLY***\n")
+    
     print("Room No. - ", rn)
+    
     print("Customer Id - ", cid)
+    
     roomno.append(rn)
+    
     custid.append(cid)
     i = i + 1
     n = int(input("0-BACK\n ->"))
