@@ -333,8 +333,11 @@ def restaurant():
 
         else:
             print("Invalid Input")
+            
         opt = input("Sir/Madam! do you want to order again(y/n)?")
+        
         print("Sir/Madam! your Bill is", bal)
+        
         print("Thanks for coming here")
 
 
@@ -369,20 +372,33 @@ def Payment():
 
                 if ch == 'y' or ch == 'Y':
                     print("\n\n --------------------------------")
+                    
                     print("		 Hotel ABCD")
                     print(" --------------------------------")
+                    
                     print("			 Bill")
                     print(" --------------------------------")
+                    
                     print(" Name: ", name[n], "\t\n Phone No.: ", phno[n], "\t\n Address: ", add[n], "\t")
+                    
                     print("\n Check-In: ", checkin[n], "\t\n Check-Out: ", checkout[n], "\t")
+                    
                     print("\n Room Type: ", room[n], "\t\n Room Charges: ", price[n] * day[n], "\t")
+                    
                     print(" Restaurant Charges: \t", rc[n])
+                    
                     print(" --------------------------------")
+                    
                     print("\n Total Amount: ", (price[n] * day[n]) + rc[n], "\t")
+                    
                     print(" --------------------------------")
+                    
                     print("		 Thank You")
+                    
                     print("		 Visit Again :)")
+                    
                     print(" --------------------------------\n")
+                    
                     p.pop(n)
                     p.insert(n, 1)
 
